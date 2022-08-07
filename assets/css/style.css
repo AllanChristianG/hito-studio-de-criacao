@@ -1,0 +1,148 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Mulish:wght@200;300;400;500;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
+
+    :root {
+
+        --primary-font-color-init: hsl(20, 83%, 66%);
+        --primary-font-color-end: hsl(14, 89%, 53%);
+        --second-font-color: hsl(231, 36%, 85%);
+        --bg-color: hsl(244, 88%, 6%);
+        --bg-aux-color:	hsl(236, 89%, 11%);
+
+        --body-font: 'Montserrat', sans-serif;
+
+        /* 1rem : 16px, 0.5rem = 8px */
+        --large-font-size: 3.15rem;
+        --media-title-font-size: 1.9rem;
+        --h1-font-size: 1.5rem;
+        --normal-font-size: 1.575rem;
+        --media-body-font-size: 1.07rem;
+        --small-font-size: 0.815rem;
+        --smaller-font-size: 0.75rem;
+        
+        /* Font weight */
+        --font-mid: 500;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+
+        /* Margin size - Bottom */
+        /* .25rem : 4px, .5rem : 8px, 1rem : 16px, .75rem : 12px */
+        --mb-025: 0.25rem;
+        --mb-05: 0.5rem;
+        --mb-075: 0.75rem;
+        --mb-1: 1rem;
+        --mb-125: 1.25rem;
+        --mb-15: 1.5rem;
+        --mb-2: 2rem;
+        --mb-25: 2.5rem;
+        --mb-3: 3rem;
+    }
+
+    body{
+        background-color: var(--bg-color);
+    }
+
+    .container{
+        margin: 25px 0 0 50px;
+        height: 700px;
+        /* Center vertically */
+        display: flex;
+        align-items: center;
+    }
+
+    .main-content{
+        position: absolute;
+        max-width: 60%;
+    }
+
+    .body-text{
+        color:var(--second-font-color);
+        margin: 25px 0 25px 0;
+    }
+
+    .body-text p{
+        /* word-break:calc(100px); */
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        letter-spacing: -0.09rem;
+        line-height: var(--mb-2);
+        max-width: 50%;
+    }
+
+    h1{
+        font-family: var(--body-font);
+        font-size: var(--large-font-size);
+        letter-spacing: -0.125rem;
+        background: -webkit-linear-gradient(
+            45deg, 
+            var(--primary-font-color-init), 
+            var(--primary-font-color-end)
+            );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .icons {
+        font-size: var(--large-font-size);
+        background: -webkit-linear-gradient(
+            45deg, 
+            var(--primary-font-color-init), 
+            var(--primary-font-color-end)
+            );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    .icons .uil-behance{
+        margin-left: 15px;
+    }
+
+    .hito-logo{
+        display: flex;
+        justify-content: end;
+        max-height: 200px;
+    }
+    img {
+        max-width: 50px;
+        margin: 115px 55px 0 0;
+    }
+
+    @media screen and (max-width: 830px) {
+
+        .container {
+            padding: 0 -50px 0 0;
+        }
+
+        h1{
+            font-size: var(--media-title-font-size);
+            letter-spacing: -0.125rem;
+            transition:smooth;
+            transition: all 250ms ease-in-out;
+
+        }
+
+        .body-text p{
+            font-size: var(--media-body-font-size);
+            letter-spacing: -0.03rem;
+            line-height: var(--mb-15);
+            max-width: 100%;
+            transition:smooth;
+            transition: all 250ms ease-in-out;
+        }
+
+        .icons {
+            font-size: var(--media-title-font-size);
+            transition: all 250ms ease-in-out;
+        }
+        img {
+            max-width: 30px;
+            margin: 160px 40px 0 0;
+            transition: all 250ms ease-in-out;
+        }
+    }
+
