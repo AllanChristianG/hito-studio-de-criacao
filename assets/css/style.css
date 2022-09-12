@@ -52,27 +52,37 @@
     }
 
     .container{
-        margin: 25px 0 0 50px;
-        height: 700px;
+        background: lightblue;
         /* Center vertically */
         /* display: flex; */
         /* align-items: center; */
     }
 
-    .hito-logo{
+    .main{
+        background-color:green;
         display: flex;
-        justify-content: start;
-        max-height: 200px;
     }
 
-    img {
-        max-width: 50px;
-        margin: 15px 50px 50px 0;
+    .logo-image{
+        background-color: gray;
+        padding: 5vw;
     }
 
-    ul {
+    .nav-bar{
+        background-color: yellow;
         display: flex;
-        flex-direction: row;
+        justify-content: end;
+        /* display: flex;
+        justify-content: flex-end; */
+    }
+
+    ul{
+        display: flex;
+    }
+
+    .image{
+        background-color:blue;
+        width: 20%;
     }
    
 
