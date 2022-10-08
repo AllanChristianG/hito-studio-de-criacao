@@ -52,39 +52,28 @@
     }
 
     .container{
-        background: lightblue;
-        /* Center vertically */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-
-    .main{
-        background-color:green;
         display: flex;
     }
 
-    .logo-image{
-        background-color: gray;
-        padding: 5vw;
+    .logo-img{
+        background-color: darkblue;
+        width: 100%;
     }
 
     .nav-bar{
         background-color: yellow;
+        width: 100%;
         display: flex;
-        justify-content: end;
-        /* display: flex;
-        justify-content: flex-end; */
+        flex-direction: row;
+        justify-content:space-between;
     }
 
-    ul{
+    .text-link{
+        background-color: lightcoral;
+        width: 70%;
         display: flex;
     }
 
-    .image{
-        background-color:blue;
-        width: 20%;
-    }
-   
 
 
 
