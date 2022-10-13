@@ -2,26 +2,22 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        overflow-x: hidden
+        overflow-x: hidden;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Mulish:wght@200;300;400;500;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
 
     :root {
 
-        --teste: #e28c52;
-        --teste2: #f08958;
-
-        --primary-font-color-init: #fff;
-        --primary-font-color-end: #fff;
-        --second-font-color: #fff;
-        --bg-color: #fff;
-        --bg-aux-color:	#fff;
+        --primary-background-color: #e28c52;
+        --body-font-text-color: #707070;
+        --main-title-color: #150940;
 
         --body-font: 'Montserrat', sans-serif;
 
         /* 1rem : 16px, 0.5rem = 8px */
-        --large-font-size: 3.15rem;
+        --body-font-size: 0.75rem;
+
         --media-title-font-size: 1.9rem;
         --h1-font-size: 1.5rem;
         --normal-font-size: 1.575rem;
@@ -49,10 +45,12 @@
 
     body{
         background-color: #fff;
+        font-family: var(--body-font);
     }
 
     .container{
         display: flex;
+        min-height: 400px;
     }
 
     .logo-img{
@@ -82,18 +80,14 @@
 
     .icon-link{
         /* background-color: aquamarine; */
+        font-family: none;
         background-color: #0f0e0e;
         width: 30%;
         min-width: 135px;
-        display: flex;
-        justify-content:space-evenly;
     }
 
     
     .text-link li{
-        display: flex;
-        justify-content: flex-start;
-        justify-content: space-around;
         padding: 0 10px 0 0;
         font-family: var(--body-font);
         font-size: var(--small-font-size);
@@ -105,18 +99,93 @@
     }
     
     .icon-link li{
-        display: flex;
-        justify-content: flex-start;
-        justify-content: space-around;
         padding: 0 10px 0 0;
     }
     
     ul{
         width:fit-content;
         display: flex;
-        align-items: center;
-        margin: 0 2rem 0 1rem;
+        margin: 5rem 2rem 0 1rem;
     }
 
+    .section{
+        background-color: white;
+        height: 900px;
+        display: flex;
+        justify-content: space-around;
+        overflow-y: hidden;
+    }
 
+    .content{
+        /* background-color: #f08958; */
+        max-width: max-content;
+        height: 700px;
+        display: flex;
+        justify-content: space-between;
+        margin: 90px 0 0px 0 ;
+    }
+
+    .img-content{
+        background-color: darkgray;
+        width: 600px;
+    }
+
+    .text-content{
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 550px;
+        color: var(--body-font-text-color);
+        font-size: var(--body-font-size);
+        margin: -1px 10px 0 10px;
+        padding: 0 50px 0 50px;
+        line-height: 2.2;
+    }
+
+    .first-p{
+        margin-bottom: 60px;
+        padding-top: -50px
+    }
+
+    .first-p h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    .second-p h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    hr{
+        margin-top: -56px;
+        width: 50px;
+        border: 2px solid var(--primary-background-color);
+    }
+
+    .first-p p{
+        margin: 40px 0 0 0 
+    }
+
+    .second-p p{
+        margin-top: 40px
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 70px 50px 70px;
+    }
+
+    .card{
+        background-color: white;
+        width: 250px;
+        height: 230px;
+        border-radius: 1%;
+        /* box-shadow: 1px 1px 20px #707070; */
+        box-shadow: 0px -2px 7px lightgray
+    }
 
