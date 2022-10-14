@@ -1,0 +1,303 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Mulish:wght@200;300;400;500;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
+
+    :root {
+
+        --primary-background-color: #e28c52;
+        --body-font-text-color: #707070;
+        --main-title-color: #150940;
+
+        --body-font: 'Montserrat', sans-serif;
+
+        /* 1rem : 16px, 0.5rem = 8px */
+        --body-font-size: 0.75rem;
+
+        --media-title-font-size: 1.9rem;
+        --h1-font-size: 1.5rem;
+        --normal-font-size: 1.575rem;
+        --media-body-font-size: 1.07rem;
+        --small-font-size: 0.815rem;
+        --smaller-font-size: 0.75rem;
+        
+        /* Font weight */
+        --font-mid: 500;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+
+        /* Margin size - Bottom */
+        /* .25rem : 4px, .5rem : 8px, 1rem : 16px, .75rem : 12px */
+        --mb-025: 0.25rem;
+        --mb-05: 0.5rem;
+        --mb-075: 0.75rem;
+        --mb-1: 1rem;
+        --mb-125: 1.25rem;
+        --mb-15: 1.5rem;
+        --mb-2: 2rem;
+        --mb-25: 2.5rem;
+        --mb-3: 3rem;
+    }
+
+    body{
+        background-color: #fff;
+        font-family: var(--body-font);
+    }
+
+    .container{
+        display: flex;
+        min-height: 400px;
+    }
+
+    .logo-img{
+        /* background-color: darkblue; */
+        background-color: #0f0e0e;
+        width: 100%;
+        padding-left: 95px;
+    }
+
+    .nav-bar{
+        /* background-color: yellow; */
+        background-color: #0f0e0e;
+        width: 100%;
+        min-width: 460px;
+        display: flex;
+    }
+
+    .text-link{
+        /* background-color: lightcoral; */
+        width: 70%;
+        min-width: 310px;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .text-link ul li{
+        margin-right: 25px;
+    }
+
+    /* Ao que me parece justify-content só funciona na presença do align-items*/
+
+    .icon-link{
+        /* background-color: aquamarine; */
+        font-family: none;
+        font-size: 25px;
+        min-width: 135px;
+        margin-top: -5px
+    }
+
+    
+    .text-link li{
+        padding: 0 10px 0 0;
+        font-family: var(--body-font);
+        font-size: var(--small-font-size);
+    }
+
+    li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .icon-link li{
+        padding: 0 10px 0 0;
+    }
+    
+    ul{
+        width:fit-content;
+        display: flex;
+        margin: 5rem 2rem 0 1rem;
+    }
+
+    .section{
+        background-color: white;
+        height: 750px;
+        display: flex;
+        justify-content: space-around;
+        overflow-y: hidden;
+    }
+
+    .content{
+        /* background-color: #f08958; */
+        max-width: max-content;
+        height: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin: 90px 0 0px 0 ;
+    }
+
+    .img-content{
+        background-color: darkgray;
+        width: 600px;
+    }
+
+    .text-content{
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 550px;
+        color: var(--body-font-text-color);
+        font-size: var(--body-font-size);
+        margin: -1px 10px 0 10px;
+        padding: 0 50px 0 50px;
+        line-height: 2.2;
+    }
+
+    .first-p{
+        margin-bottom: 60px;
+        padding-top: -50px
+    }
+
+    .first-p h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    .second-p h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    hr{
+        margin-top: -56px;
+        width: 50px;
+        border: 2px solid var(--primary-background-color);
+    }
+
+    .first-p p{
+        margin: 40px 0 0 0 
+    }
+
+    .second-p p{
+        margin-top: 40px
+    }
+
+    /* Cards section */
+
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        margin:80px 0 80px 0;
+        padding: 10px 70px 50px 70px;
+    }
+
+    .card{
+        background-color: white;
+        width: 250px;
+        height: 230px;
+        border-radius: 1%;
+        /* box-shadow: 1px 1px 20px #707070; */
+        box-shadow: 0px -2px 7px lightgray;
+        padding: 20px;
+        overflow-y: hidden;
+    }
+
+    .card-title{
+        color: #e28c52;
+        /* font-size: var(--font-bold) */
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin: 5px 0 5px 5px
+    }
+
+    .p{
+        color: var(--body-font-text-color);
+        font-size: var(--body-font-size);
+        margin: 5px 0 5px 5px
+    }
+
+
+    .card .uil {
+        color: var(--primary-background-color);
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    /* Contact-us Banner */
+
+    .banner{
+        width: auto;
+        height: 400px;
+        background-color: #f6f4f4;
+    }
+
+    .banner p{
+        font-size: 120px;
+        display: flex;
+        justify-content: center;
+        margin: 70px 130px 0 0;
+        letter-spacing: .4rem;
+        font-stretch: ultra-expanded;
+        opacity: 5%;
+    }
+
+    .banner h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        margin: -50px 0 20px 0 ;
+    }
+
+    .banner hr{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    button{
+        background-color: #e18c52;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 10px 25px 10px 25px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 2px;
+    }
+
+    button a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #de6616;
+        transition: ease-in-out;
+        transition-duration: 400ms;
+    }
+
+
+
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-content .uil{
+        color: #757575;
+        font-family: none;
+        font-size: 25px;
+        min-width: 135px;
+        margin: 0 0 200px 10px;
+    }
+
+    .hito-logo{
+        margin-left: 100px;
+    }
