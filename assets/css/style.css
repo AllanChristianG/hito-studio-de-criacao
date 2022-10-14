@@ -81,7 +81,6 @@
     .icon-link{
         /* background-color: aquamarine; */
         font-family: none;
-        background-color: #0f0e0e;
         width: 30%;
         min-width: 135px;
     }
@@ -110,7 +109,7 @@
 
     .section{
         background-color: white;
-        height: 900px;
+        height: 750px;
         display: flex;
         justify-content: space-around;
         overflow-y: hidden;
@@ -119,7 +118,7 @@
     .content{
         /* background-color: #f08958; */
         max-width: max-content;
-        height: 700px;
+        height: 800px;
         display: flex;
         justify-content: space-between;
         margin: 90px 0 0px 0 ;
@@ -174,9 +173,12 @@
         margin-top: 40px
     }
 
+    /* Cards section */
+
     .cards{
         display: flex;
         justify-content: space-evenly;
+        margin:80px 0 80px 0;
         padding: 10px 70px 50px 70px;
     }
 
@@ -186,6 +188,74 @@
         height: 230px;
         border-radius: 1%;
         /* box-shadow: 1px 1px 20px #707070; */
-        box-shadow: 0px -2px 7px lightgray
+        box-shadow: 0px -2px 7px lightgray;
+        padding: 20px;
+        overflow-y: hidden;
     }
 
+    .card-title{
+        color: #e28c52;
+        /* font-size: var(--font-bold) */
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin: 5px 0 5px 5px
+    }
+
+    .p{
+        color: var(--body-font-text-color);
+        font-size: var(--body-font-size);
+        margin: 5px 0 5px 5px
+    }
+
+
+    .card .uil {
+        color: var(--primary-background-color);
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    /* Contact-us Banner */
+
+    .banner{
+        width: auto;
+        height: 400px;
+        background-color: #f6f4f4;
+    }
+
+    .banner p{
+        font-size: 120px;
+        display: flex;
+        justify-content: center;
+        margin: 70px 130px 0 0;
+        letter-spacing: .4rem;
+        font-stretch: ultra-expanded;
+        opacity: 5%;
+    }
+
+    .banner h1{
+        color: var(--main-title-color);
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    hr{
+
+    }
+
+    .banner button{
+        background-color: var(--primary-background-color);
+        color: #fff;
+        font-size: 30px;
+        padding: 5px 20px 5px 20px;
+    }
+
+
+
+
+    /* Footer */
+
+    footer{
+        display: flex;
+    }
