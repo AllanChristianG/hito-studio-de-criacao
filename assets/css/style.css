@@ -76,13 +76,18 @@
         justify-content:space-around;
     }
 
+    .text-link ul li{
+        margin-right: 25px;
+    }
+
     /* Ao que me parece justify-content só funciona na presença do align-items*/
 
     .icon-link{
         /* background-color: aquamarine; */
         font-family: none;
-        width: 30%;
+        font-size: 25px;
         min-width: 135px;
+        margin-top: -5px
     }
 
     
@@ -237,18 +242,37 @@
         font-size: xx-large;
         display: flex;
         justify-content: center;
-        margin-bottom: 40px;
+        margin: -50px 0 20px 0 ;
     }
 
-    hr{
-
+    .banner hr{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
-    .banner button{
-        background-color: var(--primary-background-color);
+    button{
+        background-color: #e18c52;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 10px 25px 10px 25px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 2px;
+    }
+
+    button a{
+        text-decoration: none;
         color: #fff;
-        font-size: 30px;
-        padding: 5px 20px 5px 20px;
+    }
+
+    button:hover {
+        background-color: #de6616;
+        transition: ease-in-out;
+        transition-duration: 400ms;
     }
 
 
@@ -258,4 +282,22 @@
 
     footer{
         display: flex;
+        align-items: center;
+    }
+
+    .footer-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-content .uil{
+        color: #757575;
+        font-family: none;
+        font-size: 25px;
+        min-width: 135px;
+        margin: 0 0 200px 10px;
+    }
+
+    .hito-logo{
+        margin-left: 100px;
     }
